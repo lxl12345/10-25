@@ -10,10 +10,10 @@
 				$.ajax({
 					url: "http://localhost:3000/lxl",
 					type: "post",
-					data:{abc:"1"},
+					data:{abc:"2"},
 					success: function(e) {
-						for (var i in e.name) {
-							$('body').append('<p>' + e.name[i] + '</p>')
+						for (var i in e) {
+							$('body').append('<p>' + e[i] + '</p>')
 						}
 					}
 				})

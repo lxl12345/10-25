@@ -14,7 +14,7 @@ router.post('/lxl', function(req, res, next) {
 			temp=[4,5,6]
 			break;
 	}
-	res.send({"name":temp});
+	res.send([temp]);
 });
 
 module.exports = router;
