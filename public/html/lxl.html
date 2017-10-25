@@ -12,6 +12,7 @@
 					type: "post",
 					data:{abc:"2"},
 					success: function(e) {
+						console.log(e)
 						for (var i in e) {
 							$('body').append('<p>' + e[i] + '</p>')
 						}
